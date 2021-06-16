@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionNouveau"/>
+    <addaction name="actionOuvrir"/>
+    <addaction name="separator"/>
+    <addaction name="actionSauvegarder"/>
+    <addaction name="actionEnregistrer_sous"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <addaction name="actionCouper"/>
+    <addaction name="actionCopier"/>
+    <addaction name="actionColler"/>
+    <addaction name="separator"/>
+    <addaction name="actionR_tablir"/>
+    <addaction name="actionAnnuler"/>
+   </widget>
+   <widget class="QMenu" name="menuA_propos">
+    <property name="title">
+     <string>A propos</string>
+    </property>
+    <addaction name="actionA_propos_de_Notepad"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuA_propos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNouveau"/>
+   <addaction name="actionOuvrir"/>
+   <addaction name="actionSauvegarder"/>
+   <addaction name="actionEnregistrer_sous"/>
+   <addaction name="separator"/>
+   <addaction name="actionCouper"/>
+   <addaction name="actionCopier"/>
+   <addaction name="actionColler"/>
+   <addaction name="separator"/>
+   <addaction name="actionAnnuler"/>
+   <addaction name="actionR_tablir"/>
+   <addaction name="actionA_propos_de_Notepad"/>
+  </widget>
+  <action name="actionNouveau">
+   <property name="icon">
+    <iconset resource="Ressource.qrc">
+     <normaloff>:/ressource/img/new.png</normaloff>:/ressource/img/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nouveau</string>
+   </property>
+  </action>
+  <action name="actionOuvrir">
+   <property name="icon">
+    <iconset resource="Ressource.qrc">
+     <normaloff>:/ressource/img/open.png</normaloff>:/ressource/img/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir</string>
+   </property>
+  </action>
+  <action name="actionSauvegarder">
+   <property name="icon">
+    <iconset resource="Ressource.qrc">
+     <normaloff>:/ressource/img/save.png</normaloff>:/ressource/img/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sauvegarder</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer_sous">
+   <property name="icon">
+    <iconset resource="Ressource.qrc">
+     <normaloff>:/ressource/img/save-as.png</normaloff>:/ressource/img/save-as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer sous</string>
+   </property>
+  </action>
+  <action name="actionCouper">
+   <property name="icon">
+    <iconset resource="Ressource.qrc">
+     <normaloff>:/ressource/img/cut.png</normaloff>:/ressource/img/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Couper</string>
+   </property>
+  </action>
+  <action name="actionCopier">
+   <property name="icon">
+    <iconset resource="Ressource.qrc">
+     <normaloff>:/ressource/img/copy.png</normaloff>:/ressource/img/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copier</string>
+   </property>
+  </action>
+  <action name="actionColler">
+   <property name="icon">
+    <iconset resource="Ressource.qrc">
+     <normaloff>:/ressource/img/paste.png</normaloff>:/ressource/img/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Coller</string>
+   </property>
+  </action>
+  <action name="actionR_tablir">
+   <property name="icon">
+    <iconset resource="Ressource.qrc">
+     <normaloff>:/ressource/img/redo.png</normaloff>:/ressource/img/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rétablir</string>
+   </property>
+  </action>
+  <action name="actionAnnuler">
+   <property name="icon">
+    <iconset resource="Ressource.qrc">
+     <normaloff>:/ressource/img/undo.png</normaloff>:/ressource/img/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Annuler</string>
+   </property>
+  </action>
+  <action name="actionA_propos_de_Notepad">
+   <property name="icon">
+    <iconset resource="Ressource.qrc">
+     <normaloff>:/ressource/img/about.png</normaloff>:/ressource/img/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>A propos de Notepad</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Ressource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

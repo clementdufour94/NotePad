@@ -1,0 +1,1 @@
+Mon projet consiste en un Notepad ou il est possible  d’ouvrir un fichier texte déjà existant ou en créant un nouveau. Il est possible de copier/coller/couper d’annuler l’action ou de la rétablir et de sauvegarder ou de sauvegarder sous.
